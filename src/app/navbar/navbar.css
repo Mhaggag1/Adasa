@@ -1,0 +1,11 @@
+nav {
+  direction: rtl;
+}
+
+.active {
+  color: white;
+  padding-inline: 15px;
+  padding-block: 6px;
+  border-radius: 16px;
+  background-color: #ed5e0e;
+}

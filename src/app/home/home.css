@@ -1,0 +1,14 @@
+.overlay {
+  background-image: url(/images/ooorganize\ \(3\).svg);
+  background-position: center;
+  background-size: contain;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(#292929 1px, transparent 1px),
+    linear-gradient(90deg, #292929 1px, transparent 1px);
+  background-size: 60px 60px;
+}

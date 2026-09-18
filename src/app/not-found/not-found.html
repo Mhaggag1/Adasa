@@ -1,0 +1,55 @@
+<section dir="rtl" class="relative min-h-screen overflow-hidden bg-[#080808] text-white">
+  <!-- Grid Background -->
+  <div
+    class="absolute inset-0 opacity-40"
+    style="
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 75px 75px;
+    "
+  ></div>
+
+  <!-- Orange Glow -->
+  <div
+    class="absolute top-20 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-orange-500/5 blur-3xl"
+  ></div>
+
+  <!-- Content -->
+  <div
+    class="relative mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-5 py-20 text-center"
+  >
+    <!-- Badge -->
+    <div
+      class="mb-8 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-5 py-2 text-sm text-orange-500"
+    >
+      <span>●</span>
+      <span>حدث خطأ ما</span>
+      <span>●</span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="max-w-4xl text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+      Error 404
+      <span class="text-orange-500"> الصفحة غير موجود</span>
+    </h1>
+
+    <!-- Description -->
+    <div class="flex justify-between gap-3 mt-3">
+      <button
+        routerLink="/home"
+        type="button"
+        class="text-white bg-[#ED5E0E] hover:-translate-y-0.5 duration-75 box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-4xl cursor-pointer text-sm px-4 py-3 focus:outline-none"
+      >
+        العودة للصفحة الرئيسية
+      </button>
+      <button
+        routerLink="/blogs"
+        type="button"
+        class="text-white bg-[#ED5E0E] hover:-translate-y-0.5 duration-75 box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-4xl cursor-pointer text-sm px-4 py-3 focus:outline-none"
+      >
+        اقرا المقالات
+      </button>
+    </div>
+  </div>
+</section>

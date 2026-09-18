@@ -1,0 +1,282 @@
+<section class="grow rtld">
+  <article class="bg-[#0a0a0a] min-h-screen">
+    <div class="relative h-[60vh] min-h-125 overflow-hidden">
+      <img
+        [src]="blog.image"
+        [alt]="blog.title"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent"
+      ></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/30 to-transparent"></div>
+    </div>
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <div>
+          <a
+            class="px-4 py-2 bg-orange-500 text-white text-sm font-bold rounded-full hover:bg-orange-600 transition-colors"
+            >إضاءة</a
+          >
+        </div>
+        <div class="flex items-center gap-4 text-white/70 text-sm">
+          <span class="flex items-center gap-2">
+            <i class="fa-regular fa-calendar"></i>{{ blog.date }}
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="fa-regular fa-clock"></i>{{ blog.readTime }}
+          </span>
+        </div>
+        <h1
+          class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight max-w-4xl"
+        >
+          {{ blog.title }}
+        </h1>
+        <div
+          class="flex items-center gap-4 p-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 w-fit"
+        >
+          <img
+            [src]="blog.author.avatar"
+            alt=""
+            class="w-14 h-14 rounded-full object-cover ring-2 ring-orange-500/50"
+          />
+          <div class="">
+            <p class="font-bold text-white">{{ blog.author.name }}</p>
+            <p class="text-sm text-white/60">{{ blog.author.role }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid lg:grid-cols-[1fr_300px] gap-12">
+        <div class="order-2 lg:order-1">
+          <div
+            class="p-6 bg-gradient-to-r from-orange-500/10 to-yellow-500/5 rounded-2xl border border-orange-500/20 mb-10"
+          >
+            <p class="text-lg text-neutral-200 leading-relaxed italic">
+              افهم كيفية استخدام الفلاش الخارجي لإنشاء إضاءة احترافية في أي موقف.
+            </p>
+          </div>
+          <div>
+            <p class="text-neutral-300 leading-relaxed mb-6 text-lg">
+              الفلاش أداة قوية تحررك من قيود الإضاءة المتاحة. مع الفهم الصحيح، يصبح أفضل صديق
+              للمصور.
+            </p>
+            <h2
+              class="text-2xl md:text-3xl font-bold text-white mt-14 mb-6 flex items-center gap-4 scroll-mt-24"
+            >
+              <span
+                class="flex items-center justify-center w-10 h-10 bg-orange-500/10 rounded-xl border border-orange-500/30"
+              >
+                <i class="fa-solid fa-camera text-orange-500"></i
+              ></span>
+              انواع الفلاش
+            </h2>
+            <p class="text-neutral-300 leading-relaxed mb-6 text-lg">
+              الفلاش المدمج محدود القوة والمرونة. الفلاش الخارجي (Speedlight) أقوى ويمكن توجيهه.
+              فلاشات الاستوديو للتحكم الكامل.
+            </p>
+            <h2
+              class="text-2xl md:text-3xl font-bold text-white mt-14 mb-6 flex items-center gap-4 scroll-mt-24"
+            >
+              <span
+                class="flex items-center justify-center w-10 h-10 bg-orange-500/10 rounded-xl border border-orange-500/30"
+              >
+                <i class="fa-solid fa-camera text-orange-500"></i>
+              </span>
+            </h2>
+            <p class="text-neutral-300 leading-relaxed mb-6 text-lg">
+              لا توجه الفلاش مباشرة للوجه. ارتده عن السقف أو الجدار للحصول على ضوء ناعم طبيعي. السقف
+              الأبيض أفضل عاكس.
+            </p>
+            <h2
+              class="text-2xl md:text-3xl font-bold text-white mt-14 mb-6 flex items-center gap-4 scroll-mt-24"
+            >
+              <span
+                class="flex items-center justify-center w-10 h-10 bg-orange-500/10 rounded-xl border border-orange-500/30"
+              >
+                <i class="fa-solid fa-camera text-orange-500"></i
+              ></span>
+              انواع الفلاش
+            </h2>
+            <p class="text-neutral-300 leading-relaxed mb-6 text-lg">
+              الفلاش المدمج محدود القوة والمرونة. الفلاش الخارجي (Speedlight) أقوى ويمكن توجيهه.
+              فلاشات الاستوديو للتحكم الكامل.
+            </p>
+            <h2
+              class="text-2xl md:text-3xl font-bold text-white mt-14 mb-6 flex items-center gap-4 scroll-mt-24"
+            >
+              <span
+                class="flex items-center justify-center w-10 h-10 bg-orange-500/10 rounded-xl border border-orange-500/30"
+              >
+                <i class="fa-solid fa-camera text-orange-500"></i
+              ></span>
+              انواع الفلاش
+            </h2>
+            <p class="text-neutral-300 leading-relaxed mb-6 text-lg">
+              الفلاش المدمج محدود القوة والمرونة. الفلاش الخارجي (Speedlight) أقوى ويمكن توجيهه.
+              فلاشات الاستوديو للتحكم الكامل.
+            </p>
+          </div>
+          <div class="mt-14 p-6 bg-[#111111] rounded-2xl border border-[#262626]">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center border border-orange-500/30"
+              >
+                <i class="fa-solid fa-tags text-orange-500"></i>
+              </div>
+              <h3 class="font-bold text-white">الوسوم</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-4 py-2 bg-[#1a1a1a] text-neutral-400 text-sm rounded-full border border-[#262626] hover:border-orange-500/50 hover:text-orange-500 transition-colors cursor-pointer"
+              >
+                فلاش
+              </span>
+              <span
+                class="px-4 py-2 bg-[#1a1a1a] text-neutral-400 text-sm rounded-full border border-[#262626] hover:border-orange-500/50 hover:text-orange-500 transition-colors cursor-pointer"
+              >
+                إضاءة صناعية
+              </span>
+              <span
+                class="px-4 py-2 bg-[#1a1a1a] text-neutral-400 text-sm rounded-full border border-[#262626] hover:border-orange-500/50 hover:text-orange-500 transition-colors cursor-pointer"
+              >
+                Speedlight
+              </span>
+            </div>
+            <div class="mt-6 p-6 bg-[#111111] rounded-2xl border border-[#262626]">
+              <div class="flex items-center justify-between flex-wrap gap-4">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center border border-orange-500/30"
+                  >
+                    <i class="fa-solid fa-share-nodes text-orange-500"></i>
+                  </div>
+                  <h3 class="font-bold text-white">شارك المقال</h3>
+                </div>
+                <div class="flex items-center gap-3">
+                  <button
+                    class="w-11 h-11 bg-[#1a1a1a] border border-[#262626] rounded-xl flex items-center justify-center text-neutral-400 hover:bg-[#1da1f2] hover:text-white hover:border-transparent transition-all duration-300"
+                  >
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </button>
+                  <button
+                    class="w-11 h-11 bg-[#1a1a1a] border border-[#262626] rounded-xl flex items-center justify-center text-neutral-400 hover:bg-[#1da1f2] hover:text-white hover:border-transparent transition-all duration-300"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </button>
+                  <button
+                    class="w-11 h-11 bg-[#1a1a1a] border border-[#262626] rounded-xl flex items-center justify-center text-neutral-400 hover:bg-[#1da1f2] hover:text-white hover:border-transparent transition-all duration-300"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </button>
+                  <button
+                    class="w-11 h-11 bg-[#1a1a1a] border border-[#262626] rounded-xl flex items-center justify-center text-neutral-400 hover:bg-[#1da1f2] hover:text-white hover:border-transparent transition-all duration-300"
+                  >
+                    <i class="fa-brands fa-link"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="mt-6 p-8 bg-gradient-to-br from-[#161616] to-[#111111] rounded-2xl border border-[#262626]"
+              >
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                  <img [src]="blog.author.avatar" alt="" />
+                  <div class="text-center sm:text-right flex-1">
+                    <span class="text-xs text-orange-500 font-semibold uppercase tracking-wider"
+                      >كاتب المقال</span
+                    >
+                    <h3 class="text-xl font-bold text-white mt-1">{{ blog.author.name }}</h3>
+                    <p class="text-neutral-500 text-sm mb-3">{{ blog.author.role }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="order-1 lg:order-2">
+          <div class="lg:sticky lg:top-24 space-y-6">
+            <div class="p-6 bg-[#111111] rounded-2xl border border-[#262626]">
+              <div class="p-6 bg-[#111111] rounded-2xl border border-[#262626]">
+                <div
+                  class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center border border-orange-500/30"
+                >
+                  <i class="fa-solid fa-list text-orange-500"></i>
+                </div>
+                <h3 class="font-bold text-white">محتويات المقال</h3>
+              </div>
+              <div>
+                <p
+                  class="my-2 flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group"
+                >
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#1a1a1a] rounded-lg text-xs font-bold text-neutral-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 transition-colors"
+                    >1</span
+                  >
+                  <span class="text-sm">المعدات الأساسية</span>
+                </p>
+                <p
+                  class="my-2 flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group"
+                >
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#1a1a1a] rounded-lg text-xs font-bold text-neutral-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 transition-colors"
+                    >2</span
+                  >
+                  <span class="text-sm">توقيت التصوير </span>
+                </p>
+                <p
+                  class="my-2 flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group"
+                >
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#1a1a1a] rounded-lg text-xs font-bold text-neutral-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 transition-colors"
+                    >3</span
+                  >
+                  <span class="text-sm">التكوين الفني </span>
+                </p>
+                <p
+                  class="my-2 flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group"
+                >
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#1a1a1a] rounded-lg text-xs font-bold text-neutral-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 transition-colors"
+                    >4</span
+                  >
+                  <span class="text-sm">اعدادات الكاميرا </span>
+                </p>
+                <p
+                  class="my-2 flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group"
+                >
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#1a1a1a] rounded-lg text-xs font-bold text-neutral-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 transition-colors"
+                    >5</span
+                  >
+                  <span class="text-sm">المعالجة اللاحقة</span>
+                </p>
+                <p
+                  class="my-2 flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group"
+                >
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#1a1a1a] rounded-lg text-xs font-bold text-neutral-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 transition-colors"
+                    >6</span
+                  >
+                  <span class="text-sm">الخلاصة </span>
+                </p>
+              </div>
+              <div class="p-6 bg-[#111111] rounded-2xl border border-[#262626]">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="text-center p-4 bg-[#0a0a0a] rounded-xl">
+                    <i class="fa-regular fa-clock text-orange-500 text-xl mb-2"></i>
+                    <p class="text-white font-bold">{{ blog.readTime }}</p>
+                  </div>
+                  <div class="text-center p-4 bg-[#0a0a0a] rounded-xl">
+                    <i class="fa-regular fa-clock text-orange-500 text-xl mb-2"></i>
+                    <p class="text-white font-bold">{{ blog.date }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</section>
